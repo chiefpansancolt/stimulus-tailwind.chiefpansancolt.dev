@@ -27,7 +27,7 @@ const tags = {
       description: { type: String },
       icon: { type: String },
       href: { type: String },
-      version: {type: String },
+      version: { type: String },
     },
   },
 }

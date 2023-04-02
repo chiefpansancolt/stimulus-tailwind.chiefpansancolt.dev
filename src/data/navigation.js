@@ -12,8 +12,8 @@ const navigation = [
       { title: "Notification", href: "/docs/features/notification" },
       { title: "Theme", href: "/docs/features/theme" },
       { title: "Switch", href: "/docs/features/switch" },
-      { title: "Modal", href: "/docs/features/modal" }
-    ]
+      { title: "Modal", href: "/docs/features/modal" },
+    ],
   },
   {
     title: "Contributing",

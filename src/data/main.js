@@ -1,5 +1,9 @@
-import { BookOpenIcon, ChatBubbleBottomCenterTextIcon, MapIcon, PlayCircleIcon } from '@heroicons/react/24/outline';
-
+import {
+  BookOpenIcon,
+  ChatBubbleBottomCenterTextIcon,
+  MapIcon,
+  PlayCircleIcon,
+} from "@heroicons/react/24/outline"
 
 const main = [
   {

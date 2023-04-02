@@ -10,7 +10,7 @@ export function Navigation({ navigation, main, className }) {
       <ul role="list" className="pb-6">
         {main.map((section) => (
           <li key={section.title}>
-            <Link 
+            <Link
               href={section.href}
               className={clsx(
                 "group mb-4 flex items-center font-medium lg:text-sm lg:leading-6",
