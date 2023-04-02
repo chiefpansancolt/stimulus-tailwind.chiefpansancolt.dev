@@ -1,14 +1,15 @@
 import { BellIcon, MoonIcon } from "@heroicons/react/24/outline"
-import { BrowsersIcon } from "./icons/BrowsersIcon"
-import { ToggleIcon } from "./icons/ToggleIcon"
 import clsx from "clsx"
 import { useId } from "react"
+
+import { BrowsersIcon } from "./icons/BrowsersIcon"
+import { ToggleIcon } from "./icons/ToggleIcon"
 
 const icons = {
   bell: BellIcon,
   moon: MoonIcon,
   browsers: BrowsersIcon,
-  toggle: ToggleIcon
+  toggle: ToggleIcon,
 }
 
 const iconStyles = {
@@ -20,7 +21,5 @@ export function Icon({ color = "blue", icon, className, ...props }) {
   let id = useId()
   let IconComponent = icons[icon]
 
-  return (
-    <IconComponent id={id} className={clsx(className, "text-sky-500")} {...props} />
-  )
+  return <IconComponent id={id} className={clsx(className, "text-sky-500")} {...props} />
 }

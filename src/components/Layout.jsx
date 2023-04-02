@@ -1,17 +1,16 @@
-import { Hero } from "@/components/Hero";
-import { Logo, LogoDarkMode, Logomark } from "@/components/Logo";
-import { MobileNavigation } from "@/components/MobileNavigation";
-import { Navigation } from "@/components/Navigation";
-import { Prose } from "@/components/Prose";
-import { Search } from "@/components/Search";
-import { ThemeSelector } from '@/components/ThemeSelector';
-import navigation from "@/data/navigation";
-import main from "@/data/main";
-import clsx from "clsx";
-import Link from "next/link";
+import { Hero } from "@/components/Hero"
+import { Logo, LogoDarkMode, Logomark } from "@/components/Logo"
+import { MobileNavigation } from "@/components/MobileNavigation"
+import { Navigation } from "@/components/Navigation"
+import { Prose } from "@/components/Prose"
+import { Search } from "@/components/Search"
+import { ThemeSelector } from "@/components/ThemeSelector"
+import main from "@/data/main"
+import navigation from "@/data/navigation"
+import clsx from "clsx"
+import Link from "next/link"
 import { useRouter } from "next/router"
 import { useCallback, useEffect, useState } from "react"
-
 
 function GitHubIcon(props) {
   return (
@@ -51,8 +50,8 @@ function Header({ navigation }) {
         <Link href="/" aria-label="Home page">
           <Logomark className="h-6 w-6 lg:hidden" />
           <span className="hidden lg:block">
-            <Logo className="h-10 w-auto fill-slate-700 dark:fill-sky-100 block dark:hidden" />
-            <LogoDarkMode className="h-10 w-auto fill-slate-700 dark:fill-sky-100 hidden dark:block" />
+            <Logo className="block h-10 w-auto fill-slate-700 dark:hidden dark:fill-sky-100" />
+            <LogoDarkMode className="hidden h-10 w-auto fill-slate-700 dark:block dark:fill-sky-100" />
           </span>
         </Link>
       </div>
@@ -147,13 +146,13 @@ export function Layout({ children, title, tableOfContents }) {
       <div className="relative mx-auto flex justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
-          <div className="absolute top-16 bottom-0 right-0 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block" />
-          <div className="absolute top-28 bottom-0 right-0 hidden w-px bg-slate-800 dark:block" />
+          <div className="absolute bottom-0 right-0 top-16 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block" />
+          <div className="absolute bottom-0 right-0 top-28 hidden w-px bg-slate-800 dark:block" />
           <div className="sticky top-[4.5rem] -ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto overflow-x-hidden py-16 pl-0.5">
             <Navigation navigation={navigation} main={main} className="w-64 pr-8" />
           </div>
         </div>
-        <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
+        <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16">
           <article>
             {(title || section) && (
               <header className="mb-9 space-y-1">

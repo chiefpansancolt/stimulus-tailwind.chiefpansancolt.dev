@@ -51,15 +51,16 @@ You'll want to initialize StimulusJS and then you can import all the Tailwind co
 
 ```javascript
 // ../application.js
-
 import { Application } from "@hotwired/stimulus"
-const application = Application.start();
 // Import and register all Tailwind Components
-import { Notification, Theme, Switch, Modal } from "stimulus-tailwind-components"
-application.register('notification', Notification)
-application.register('theme', Theme)
-application.register('switch', Switch)
-application.register('modal', Modal)
+import { Modal, Notification, Switch, Theme } from "stimulus-tailwind-components"
+
+const application = Application.start()
+
+application.register("notification", Notification)
+application.register("theme", Theme)
+application.register("switch", Switch)
+application.register("modal", Modal)
 ```
 
 ### Jekyll projects
@@ -71,7 +72,7 @@ This project would be you downloading the minified js file that outputs for usag
 
 <head>
   <script>
-    window.esmsInitOptions = { enable: ["css-modules", "json-modules"] };
+    window.esmsInitOptions = { enable: ["css-modules", "json-modules"] }
   </script>
   <script async src="https://unpkg.com/es-module-shims/dist/es-module-shims.js"></script>
 
@@ -85,33 +86,34 @@ This project would be you downloading the minified js file that outputs for usag
   </script>
 
   <script type="module">
-    import { Application } from "@hotwired/stimulus";
-    import { Theme, Notification, Switch, Modal } from "stimulus-tailwind-components";
-    (() => {
-      const application = Application.start();
-      application.register("theme", Theme);
-      application.register("notification", Notification);
-      application.register("switch", Switch);
-      application.register("modal", Modal);
-    })();
+    import { Application } from "@hotwired/stimulus"
+    import { Modal, Notification, Switch, Theme } from "stimulus-tailwind-components"
+
+    ;(() => {
+      const application = Application.start()
+      application.register("theme", Theme)
+      application.register("notification", Notification)
+      application.register("switch", Switch)
+      application.register("modal", Modal)
+    })()
   </script>
 </head>
 ```
-
 
 ### Rails Application (v7+)
 
 ```javascript
 // ./app/javascript/controllers/application.js
-
-import { Application } from '@hotwired/stimulus'
-const application = Application.start()
+import { Application } from "@hotwired/stimulus"
 // Import and register all Tailwind Components
-import { Notification, Theme, Switch, Modal } from 'stimulus-tailwind-components'
-application.register('notification', Notification)
-application.register('theme', Theme)
-application.register('switch', Switch)
-application.register('modal', Modal)
+import { Modal, Notification, Switch, Theme } from "stimulus-tailwind-components"
+
+const application = Application.start()
+
+application.register("notification", Notification)
+application.register("theme", Theme)
+application.register("switch", Switch)
+application.register("modal", Modal)
 // Configure Stimulus development experience
 application.debug = false
 window.Stimulus = application
