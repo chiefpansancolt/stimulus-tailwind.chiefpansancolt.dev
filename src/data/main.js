@@ -23,7 +23,7 @@ const main = [
   },
   {
     title: "Roadmap",
-    href: "https://github.com/users/chiefpansancolt/projects/7",
+    href: "https://github.com/users/chiefpansancolt/projects/3",
     icon: MapIcon,
   },
 ]
