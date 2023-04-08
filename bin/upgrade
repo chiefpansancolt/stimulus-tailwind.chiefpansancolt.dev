@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+echo "== Upgrade Starting =="
+
+echo ""
+echo "== Running Yarn Upgrade =="
+yarn upgrade --latest
+
+echo ""
+echo "== Upgrade Finished =="
