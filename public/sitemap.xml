@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://stimulus-tailwind.chiefpansancolt.dev/</loc>
+  <lastmod>2023-04-03T00:14:35+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://stimulus-tailwind.chiefpansancolt.dev/docs/installation</loc>
+  <lastmod>2023-04-03T00:14:35+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://stimulus-tailwind.chiefpansancolt.dev/docs/features/notification</loc>
+  <lastmod>2023-04-03T00:14:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://stimulus-tailwind.chiefpansancolt.dev/docs/features/theme</loc>
+  <lastmod>2023-04-03T00:14:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://stimulus-tailwind.chiefpansancolt.dev/docs/features/switch</loc>
+  <lastmod>2023-04-03T00:14:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://stimulus-tailwind.chiefpansancolt.dev/docs/features/modal</loc>
+  <lastmod>2023-04-03T00:14:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://stimulus-tailwind.chiefpansancolt.dev/docs/how-to-contribute</loc>
+  <lastmod>2023-04-03T00:14:35+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://stimulus-tailwind.chiefpansancolt.dev/docs/development</loc>
+  <lastmod>2023-04-03T00:14:35+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://stimulus-tailwind.chiefpansancolt.dev/docs/sponsor</loc>
+  <lastmod>2023-04-03T00:14:35+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://stimulus-tailwind.chiefpansancolt.dev/docs/change-log</loc>
+  <lastmod>2023-04-03T00:14:35+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+
+
+</urlset>
