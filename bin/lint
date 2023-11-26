@@ -4,19 +4,19 @@ echo "== Starting Linting =="
 
 echo ""
 echo "== Linting Next =="
-yarn lint:next
+pnpm lint:next
 
 echo ""
 echo "== Linting Markdown =="
-yarn lint:markdown
+pnpm lint:markdown
 
 echo ""
 echo "== Formatting with Prettier =="
-if ! yarn format; then
+if ! pnpm format; then
   echo ""
   echo "== Files found needing formatting =="
   echo "== Initialting Fixes =="
-  yarn format:fix
+  pnpm format:fix
 fi
 
 echo ""
