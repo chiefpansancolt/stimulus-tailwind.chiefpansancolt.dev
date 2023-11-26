@@ -1,13 +1,14 @@
-import { Button } from "@/components/Button"
-import { HeroBackground } from "@/components/HeroBackground"
-import blurCyanImage from "@/images/blur-cyan.png"
-import blurIndigoImage from "@/images/blur-indigo.png"
-import clsx from "clsx"
-import Image from "next/image"
-import Highlight, { defaultProps } from "prism-react-renderer"
-import { Fragment } from "react"
+import { Fragment } from 'react'
+import Image from 'next/image'
+import clsx from 'clsx'
+import { Highlight } from 'prism-react-renderer'
 
-const codeLanguage = "javascript"
+import { Button } from '@/components/Button'
+import { HeroBackground } from '@/components/HeroBackground'
+import blurCyanImage from '@/images/blur-cyan.png'
+import blurIndigoImage from '@/images/blur-indigo.png'
+
+const codeLanguage = 'javascript'
 const code = `import { Application } from "@hotwired/stimulus";
 import { Theme, Notification, Switch, Modal } from "stimulus-tailwind-components";
 (() => {
@@ -19,8 +20,7 @@ import { Theme, Notification, Switch, Modal } from "stimulus-tailwind-components
 })();`
 
 const tabs = [
-  { name: "application.js", isActive: true },
-  { name: "package.json", isActive: false },
+  { name: 'application.js', isActive: true },
 ]
 
 function TrafficLightsIcon(props) {
@@ -35,7 +35,7 @@ function TrafficLightsIcon(props) {
 
 export function Hero() {
   return (
-    <div className="overflow-hidden bg-slate-900 dark:-mb-32 dark:mt-[-4.5rem] dark:pb-32 dark:pt-[4.5rem] dark:lg:mt-[-4.75rem] dark:lg:pt-[4.75rem]">
+    <div className="overflow-hidden bg-slate-900 dark:-mb-32 dark:mt-[-4.75rem] dark:pb-32 dark:pt-[4.75rem]">
       <div className="py-16 sm:px-2 lg:relative lg:px-0 lg:py-20">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 lg:max-w-8xl lg:grid-cols-2 lg:px-8 xl:gap-x-16 xl:px-12">
           <div className="relative z-10 md:text-center lg:text-left">
@@ -58,10 +58,7 @@ export function Hero() {
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="/">Get started</Button>
-                <Button
-                  href="https://github.com/chiefpansancolt/stimulus-tailwind-components"
-                  variant="secondary"
-                >
+                <Button href="/" variant="secondary">
                   View on GitHub
                 </Button>
               </div>
@@ -102,16 +99,16 @@ export function Hero() {
                       <div
                         key={tab.name}
                         className={clsx(
-                          "flex h-6 rounded-full",
+                          'flex h-6 rounded-full',
                           tab.isActive
-                            ? "bg-gradient-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px font-medium text-sky-300"
-                            : "text-slate-500"
+                            ? 'bg-gradient-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px font-medium text-sky-300'
+                            : 'text-slate-500',
                         )}
                       >
                         <div
                           className={clsx(
-                            "flex items-center rounded-full px-2.5",
-                            tab.isActive && "bg-slate-800"
+                            'flex items-center rounded-full px-2.5',
+                            tab.isActive && 'bg-slate-800',
                           )}
                         >
                           {tab.name}
@@ -125,27 +122,41 @@ export function Hero() {
                       className="select-none border-r border-slate-300/5 pr-4 font-mono text-slate-600"
                     >
                       {Array.from({
-                        length: code.split("\n").length,
+                        length: code.split('\n').length,
                       }).map((_, index) => (
                         <Fragment key={index}>
-                          {(index + 1).toString().padStart(2, "0")}
+                          {(index + 1).toString().padStart(2, '0')}
                           <br />
                         </Fragment>
                       ))}
                     </div>
                     <Highlight
-                      {...defaultProps}
                       code={code}
                       language={codeLanguage}
-                      theme={undefined}
+                      theme={{ plain: {}, styles: [] }}
                     >
-                      {({ className, style, tokens, getLineProps, getTokenProps }) => (
-                        <pre className={clsx(className, "flex overflow-x-auto pb-6")} style={style}>
+                      {({
+                        className,
+                        style,
+                        tokens,
+                        getLineProps,
+                        getTokenProps,
+                      }) => (
+                        <pre
+                          className={clsx(
+                            className,
+                            'flex overflow-x-auto pb-6',
+                          )}
+                          style={style}
+                        >
                           <code className="px-4">
                             {tokens.map((line, lineIndex) => (
                               <div key={lineIndex} {...getLineProps({ line })}>
                                 {line.map((token, tokenIndex) => (
-                                  <span key={tokenIndex} {...getTokenProps({ token })} />
+                                  <span
+                                    key={tokenIndex}
+                                    {...getTokenProps({ token })}
+                                  />
                                 ))}
                               </div>
                             ))}
