@@ -1,0 +1,11 @@
+{
+    "buildCommand": "next build",
+    "devCommand": "next dev",
+    "installCommand": "pnpm install",
+    "framework": "nextjs",
+    "git": {
+        "deploymentEnabled": {
+            "main": false
+        }
+    }
+}

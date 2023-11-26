@@ -1,10 +1,11 @@
+/** @type {import('prettier').Options} */
 module.exports = {
   plugins: [
-    require("@trivago/prettier-plugin-sort-imports"),
-    require("prettier-plugin-tailwindcss"),
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss",
   ],
   semi: false,
-  singleQuote: false,
+  singleQuote: true,
   printWidth: 100,
   trailingComma: "es5",
   arrowParens: "always",

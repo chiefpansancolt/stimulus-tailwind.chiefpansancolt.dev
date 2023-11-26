@@ -1,8 +1,8 @@
-const defaultTheme = require("tailwindcss/defaultTheme")
+const typographyPlugin = require("@tailwindcss/typography")
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx,md}"],
   darkMode: "class",
   theme: {
     fontSize: {
@@ -22,13 +22,13 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        display: ["Lexend", ...defaultTheme.fontFamily.sans],
+        sans: "var(--font-inter)",
+        display: ["var(--font-lexend)", { fontFeatureSettings: '"ss01"' }],
       },
       maxWidth: {
         "8xl": "88rem",
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [typographyPlugin],
 }
