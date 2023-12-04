@@ -15,11 +15,11 @@ dependencies:
     specifier: ^2.0.18
     version: 2.0.18(react@18.2.0)
   '@markdoc/markdoc':
-    specifier: ^0.3.5
-    version: 0.3.5(react@18.2.0)
+    specifier: ^0.4.0
+    version: 0.4.0(react@18.2.0)
   '@markdoc/next.js':
     specifier: ^0.3.6
-    version: 0.3.6(@markdoc/markdoc@0.3.5)(next@14.0.3)(react@18.2.0)
+    version: 0.3.6(@markdoc/markdoc@0.4.0)(next@14.0.3)(react@18.2.0)
   '@sindresorhus/slugify':
     specifier: ^2.2.1
     version: 2.2.1
@@ -461,8 +461,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@markdoc/markdoc@0.3.5(react@18.2.0):
-    resolution: {integrity: sha512-Z3agu2wnodoOYd5kzKbtwZduSfX19Kbsg/FlK0TeMn29cTTEEVPJtjfgKSMTN/Wq+kUQXnPtOEhHRgke5d/Xiw==}
+  /@markdoc/markdoc@0.4.0(react@18.2.0):
+    resolution: {integrity: sha512-fSh4P3Y4E7oaKYc2oNzSIJVPDto7SMzAuQN1Iyx53UxzleA6QzRdNWRxmiPqtVDaDi5dELd2yICoG91csrGrAw==}
     engines: {node: '>=14.7.0'}
     peerDependencies:
       '@types/react': '*'
@@ -478,14 +478,14 @@ packages:
       '@types/markdown-it': 12.2.3
     dev: false
 
-  /@markdoc/next.js@0.3.6(@markdoc/markdoc@0.3.5)(next@14.0.3)(react@18.2.0):
+  /@markdoc/next.js@0.3.6(@markdoc/markdoc@0.4.0)(next@14.0.3)(react@18.2.0):
     resolution: {integrity: sha512-/unW7ejzaxwSg7zq4pxZFaaPjRn09PkjMe8INkR0SN5FvblJnytWKhBorUvdRe3dYXsO2GkN6BARZAfIbaDYMw==}
     peerDependencies:
       '@markdoc/markdoc': '*'
       next: '*'
       react: '*'
     dependencies:
-      '@markdoc/markdoc': 0.3.5(react@18.2.0)
+      '@markdoc/markdoc': 0.4.0(react@18.2.0)
       js-yaml: 4.1.0
       next: 14.0.3(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
