@@ -20,7 +20,7 @@
     "@markdoc/markdoc": "^0.4.0",
     "@markdoc/next.js": "^0.3.7",
     "@sindresorhus/slugify": "^2.2.1",
-    "@tailwindcss/typography": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.13",
     "@vercel/analytics": "^1.2.2",
     "autoprefixer": "^10.4.19",
     "clsx": "^2.1.0",
