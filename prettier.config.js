@@ -1,20 +1,7 @@
 /** @type {import('prettier').Options} */
 module.exports = {
-  plugins: [
-    "@trivago/prettier-plugin-sort-imports",
-    "prettier-plugin-tailwindcss",
-  ],
-  semi: false,
   singleQuote: true,
-  printWidth: 100,
-  trailingComma: "es5",
-  arrowParens: "always",
-  tabWidth: 2,
-  useTabs: false,
-  quoteProps: "as-needed",
-  jsxSingleQuote: false,
-  bracketSpacing: true,
-  importOrder: ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
-  importOrderSeparation: true,
-  importOrderSortSpecifiers: true,
+  semi: false,
+  plugins: ['prettier-plugin-tailwindcss'],
+  tailwindStylesheet: './src/styles/tailwind.css',
 }

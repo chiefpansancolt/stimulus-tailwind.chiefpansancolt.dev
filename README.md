@@ -1,37 +1,31 @@
-![Logo](/.github/Stimulus-tailwind%20Logo.png)
+# StimulusJS Tailwind - Documentation Site
 
-# StimulusJS Tailwind Documentation
+Documentation site for the [stimulus-tailwind-components](https://github.com/chiefpansancolt/stimulus-tailwind-components) NPM package.
 
-![npm](https://img.shields.io/npm/v/stimulus-tailwind-components?logo=NPM&style=for-the-badge)
-![npm](https://img.shields.io/npm/dm/stimulus-tailwind-components?logo=NPM&style=for-the-badge)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/chiefpansancolt/stimulus-tailwind-components?label=Release&logo=github&style=for-the-badge)
-[![Discord](https://img.shields.io/discord/450095227185659905?color=yellow&label=Discord&logo=discord&style=for-the-badge)](https://discord.gg/pBxGpfrmD4)
+Built with [Next.js](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com), and [Markdoc](https://markdoc.io).
 
-[![GitHub Workflow Deploy Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/stimulus-tailwind.chiefpansancolt.dev/deploy.yml?label=Deploy&logo=github&style=flat-square)](https://github.com/chiefpansancolt/stimulus-tailwind.chiefpansancolt.dev/actions/workflows/deploy.yml)
-[![GitHub Workflow Build Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/stimulus-tailwind.chiefpansancolt.dev/build.yml?label=Build&logo=github&style=flat-square)](https://github.com/chiefpansancolt/stimulus-tailwind.chiefpansancolt.dev/actions/workflows/build.yml)
-[![GitHub Workflow Lint Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/stimulus-tailwind.chiefpansancolt.dev/lints.yml?label=Lints&logo=github&style=flat-square)](https://github.com/chiefpansancolt/stimulus-tailwind.chiefpansancolt.dev/actions/workflows/lints.yml)
-[![CodeQL](https://github.com/chiefpansancolt/stimulus-tailwind.chiefpansancolt.dev/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/chiefpansancolt/stimulus-tailwind.chiefpansancolt.dev/actions/workflows/github-code-scanning/codeql)
+## Development
 
-> My website, created with Next.js, TailwindCSS, and TailwindUI using Syntax Template
+Install dependencies:
 
-## Prerequisites
+```bash
+npm install
+```
 
-### JavaScript
+Run the development server:
 
-<p>
-  <img src="https://img.shields.io/badge/node-21.x.x-blue.svg" />
-  <img src="https://img.shields.io/badge/pnpm-8.x.x-blue.svg" />
-</p>
+```bash
+npm run dev
+```
 
-## Author
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-👤 **Christopher Pezza**
+## Build
 
-- Website: https://chiefpansancolt.dev
-- Twitter: [@chiefpansancolt](https://twitter.com/chiefpansancolt)
-- Github: [@chiefpansancolt](https://github.com/chiefpansancolt)
-- LinkedIn: [pezzachristopher](https://linkedin.com/in/pezzachristopher)
+```bash
+npm run build
+```
 
-## Show your support
+## Deployed Site
 
-Give a ⭐️ if this project helped you!
+[https://stimulus-tailwind.chiefpansancolt.dev](https://stimulus-tailwind.chiefpansancolt.dev)
