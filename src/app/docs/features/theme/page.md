@@ -51,7 +51,12 @@ Want to see them in action? Check out the examples [here](https://chiefpansancol
 
 ```html
 <!DOCTYPE html>
-<html lang="en" data-controller="theme" data-theme-target="body" data-theme-dark-class="dark">
+<html
+  lang="en"
+  data-controller="theme"
+  data-theme-target="body"
+  data-theme-dark-class="dark"
+>
   <head>
     <meta charset="utf-8" />
     <title>Example Site Title</title>

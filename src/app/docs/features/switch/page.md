@@ -65,7 +65,12 @@ This option showcases being paired with the Theme Component for enabling and dis
 
 ```html
 <!DOCTYPE html>
-<html lang="en" data-controller="theme" data-theme-target="body" data-theme-dark-class="dark">
+<html
+  lang="en"
+  data-controller="theme"
+  data-theme-target="body"
+  data-theme-dark-class="dark"
+>
   <head>
     <meta charset="utf-8" />
     <title>{{ page.title }}</title>
@@ -88,7 +93,7 @@ This option showcases being paired with the Theme Component for enabling and dis
       data-switch-on-background-class="bg-purple-700"
       data-switch-off-background-class="bg-gray-200"
       data-switch-status-value="false"
-      class="relative inline-flex h-7 w-14 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors focus:outline-none focus:ring-2 focus:ring-purple-700 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-800"
+      class="relative inline-flex h-7 w-14 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors focus:ring-2 focus:ring-purple-700 focus:ring-offset-2 focus:ring-offset-white focus:outline-none dark:focus:ring-offset-gray-800"
     >
       <span class="sr-only">Toggle Dark Mode On/Off</span>
       <span
@@ -124,7 +129,9 @@ This option showcases being paired with the Theme Component for enabling and dis
             viewBox="0 0 20 20"
             fill="currentColor"
           >
-            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+            <path
+              d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+            />
           </svg>
         </span>
       </span>
@@ -152,7 +159,7 @@ This option is a basic implementation of the switch/toggle
   data-switch-on-background-class="bg-purple-700"
   data-switch-off-background-class="bg-gray-200"
   data-switch-status-value="false"
-  class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+  class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 transition-colors duration-200 ease-in-out focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-none"
   role="switch"
   aria-checked="false"
 >
@@ -184,7 +191,7 @@ This option showcases the usage of an input. This controller will trigger an onc
   data-switch-on-background-class="bg-purple-700"
   data-switch-off-background-class="bg-gray-200"
   data-switch-status-value="false"
-  class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+  class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 transition-colors duration-200 ease-in-out focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-none"
   role="switch"
   aria-checked="false"
 >

@@ -79,8 +79,13 @@ This option is without a close ability on the modal.
   >
     Show Advanced Modal
   </button>
-  <div data-modal-target="container" class="fixed inset-0 z-20 hidden overflow-y-auto">
-    <div class="flex h-2/3 items-end justify-center px-4 pb-20 pt-4 text-center sm:block sm:p-0">
+  <div
+    data-modal-target="container"
+    class="fixed inset-0 z-20 hidden overflow-y-auto"
+  >
+    <div
+      class="flex h-2/3 items-end justify-center px-4 pt-4 pb-20 text-center sm:block sm:p-0"
+    >
       <div
         data-modal-target="background"
         class="fixed inset-0 opacity-0 transition-opacity"
@@ -88,19 +93,21 @@ This option is without a close ability on the modal.
       >
         <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
       </div>
-      <span class="inline-block align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+      <span class="inline-block align-middle sm:h-screen" aria-hidden="true"
+        >&#8203;</span
+      >
       <div
         data-modal-target="view"
-        class="inline-block transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left align-bottom shadow-xl transition-all dark:bg-gray-800 sm:my-8 sm:w-full sm:max-w-lg sm:p-6 sm:align-middle"
+        class="inline-block transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left align-bottom shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6 sm:align-middle dark:bg-gray-800"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-headline"
       >
-        <div class="absolute right-0 top-0 pr-4 pt-4">
+        <div class="absolute top-0 right-0 pt-4 pr-4">
           <div class="sm:flex sm:items-start">
-            <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+            <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
               <h3
-                class="text-lg font-medium leading-6 text-gray-900 dark:text-gray-50"
+                class="text-lg leading-6 font-medium text-gray-900 dark:text-gray-50"
                 data-ignore="true"
               >
                 Header Title
@@ -147,7 +154,9 @@ This option is everything available with the modal.
     data-action="click->modal#closeBackground keyup@window->modal#closeWithKeyboard"
     class="fixed inset-0 z-20 hidden overflow-y-auto"
   >
-    <div class="flex h-2/3 items-end justify-center px-4 pb-20 pt-4 text-center sm:block sm:p-0">
+    <div
+      class="flex h-2/3 items-end justify-center px-4 pt-4 pb-20 text-center sm:block sm:p-0"
+    >
       <div
         data-modal-target="background"
         class="fixed inset-0 opacity-0 transition-opacity"
@@ -155,19 +164,21 @@ This option is everything available with the modal.
       >
         <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
       </div>
-      <span class="inline-block align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+      <span class="inline-block align-middle sm:h-screen" aria-hidden="true"
+        >&#8203;</span
+      >
       <div
         data-modal-target="view"
-        class="inline-block transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left align-bottom shadow-xl transition-all dark:bg-gray-800 sm:my-8 sm:w-full sm:max-w-lg sm:p-6 sm:align-middle"
+        class="inline-block transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left align-bottom shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6 sm:align-middle dark:bg-gray-800"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-headline"
       >
-        <div class="absolute right-0 top-0 pr-4 pt-4">
+        <div class="absolute top-0 right-0 pt-4 pr-4">
           <button
             data-action="click->modal#close"
             type="button"
-            class="rounded-md bg-transparent text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:text-gray-50 dark:hover:text-gray-200"
+            class="rounded-md bg-transparent text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:outline-none dark:text-gray-50 dark:hover:text-gray-200"
           >
             <span class="sr-only">Close</span>
             <svg
@@ -178,14 +189,18 @@ This option is everything available with the modal.
               stroke="currentColor"
               stroke-width="2"
             >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>
         <div class="sm:flex sm:items-start">
-          <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+          <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
             <h3
-              class="text-lg font-medium leading-6 text-gray-900 dark:text-gray-50"
+              class="text-lg leading-6 font-medium text-gray-900 dark:text-gray-50"
               data-ignore="true"
             >
               Header Title

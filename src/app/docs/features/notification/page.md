@@ -82,7 +82,7 @@ This option supports the following options:
       data-notification-leaving-class="transition ease-in duration-100"
       data-notification-leaving-to-class="opacity-0"
       data-notification-leaving-from-class="opacity-100"
-      class="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+      class="ring-opacity-5 pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black"
     >
       <div class="p-4">
         <div class="flex items-start">
@@ -96,7 +96,7 @@ This option supports the following options:
             <button
               data-action="notification#close"
               type="button"
-              class="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+              class="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-none"
             >
               <span class="sr-only">Close</span>
               <svg
@@ -143,14 +143,15 @@ This option supports the following options:
       data-notification-leaving-class="transition ease-in duration-100"
       data-notification-leaving-to-class="opacity-0"
       data-notification-leaving-from-class="opacity-100"
-      class="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+      class="ring-opacity-5 pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black"
     >
       <div class="p-4">
         <div class="flex items-start">
           <div class="ml-3 w-0 flex-1 pt-0.5">
             <p class="text-sm font-medium text-gray-900">Successfully!</p>
             <p class="mt-1 text-sm text-gray-500">
-              I am a Notification< without Auto Dismiss and with Manual Dismiss/p>
+              I am a Notification< without Auto Dismiss and with Manual
+              Dismiss/p>
             </p>
           </div>
 
@@ -158,7 +159,7 @@ This option supports the following options:
             <button
               data-action="notification#close"
               type="button"
-              class="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+              class="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-none"
             >
               <span class="sr-only">Close</span>
               <svg
@@ -239,7 +240,7 @@ In Rails you can use a gem called View Components to enable the ability to templ
   data-notification-leaving-class="transition ease-in duration-100"
   data-notification-leaving-to-class="opacity-0"
   data-notification-leaving-from-class="opacity-100"
-  class="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+  class="ring-opacity-5 pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black"
 >
   <div class="p-4">
     <div class="flex items-start">
@@ -268,14 +269,16 @@ In Rails you can use a gem called View Components to enable the ability to templ
         </svg>
       </div>
       <div class="ml-3 w-0 flex-1 pt-0.5">
-        <p class="text-sm font-medium text-gray-900"><%= TYPES[type][:label] %></p>
+        <p class="text-sm font-medium text-gray-900">
+          <%= TYPES[type][:label] %>
+        </p>
         <p class="mt-1 text-sm text-gray-500"><%= content %></p>
       </div>
       <div class="ml-4 flex flex-shrink-0">
         <button
           data-action="notification#close"
           type="button"
-          class="inline-flex rounded-md bg-white text-gray-400 transition duration-150 ease-in-out hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          class="inline-flex rounded-md bg-white text-gray-400 transition duration-150 ease-in-out hover:text-gray-500 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-none"
         >
           <span class="sr-only">Close</span>
           <svg
