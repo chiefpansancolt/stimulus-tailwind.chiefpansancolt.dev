@@ -5,9 +5,6 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 10
-    ignore:
-      - dependency-name: eslint
-        versions: ['>=10']
     groups:
       next:
         patterns:
@@ -23,12 +20,32 @@ updates:
         patterns:
           - tailwindcss
           - '@tailwindcss/*'
+      flowbite:
+        patterns:
+          - flowbite-react
+      vercel:
+        patterns:
+          - '@vercel/*'
+      prettier:
+        patterns:
+          - prettier
+          - prettier-plugin-tailwindcss
+          - '@trivago/prettier-plugin-sort-imports'
       dev-dependencies:
         dependency-type: development
         exclude-patterns:
           - eslint-config-next
           - '@types/react'
           - '@types/react-dom'
+          - tailwindcss
+          - '@tailwindcss/*'
+          - prettier
+          - prettier-plugin-tailwindcss
+          - '@trivago/prettier-plugin-sort-imports'
+    ignore:
+      - dependency-name: 'eslint'
+        update-types:
+          - 'version-update:semver-major'
 
   - package-ecosystem: github-actions
     directory: /
