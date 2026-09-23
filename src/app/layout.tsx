@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
 import clsx from 'clsx'
 
-import { Analytics } from '@vercel/analytics/next'
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
 
@@ -55,7 +54,11 @@ export default function RootLayout({
         <Providers>
           <Layout>{children}</Layout>
         </Providers>
-        <Analytics />
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "6ee1ad6100254c928ad9c2480f35860a"}'
+        />
       </body>
     </html>
   )

@@ -27,7 +27,6 @@
     "@tailwindcss/postcss": "^4.3.3",
     "@tailwindcss/typography": "^0.5.20",
     "@types/react-highlight-words": "^0.20.1",
-    "@vercel/analytics": "^2.0.1",
     "clsx": "^2.1.1",
     "fast-glob": "^3.3.3",
     "flexsearch": "^0.8.212",
