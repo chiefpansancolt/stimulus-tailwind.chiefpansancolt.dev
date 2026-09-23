@@ -1,1 +1,0 @@
-Sitemap: https://stimulus-tailwind.chiefpansancolt.dev/sitemap.xml

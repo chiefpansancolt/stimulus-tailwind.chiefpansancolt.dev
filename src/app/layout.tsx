@@ -21,14 +21,37 @@ const lexend = localFont({
   variable: '--font-lexend',
 })
 
+const siteUrl = 'https://stimulus-tailwind.chiefpansancolt.dev'
+const siteDescription =
+  'Getting started with using StimulusJS Tailwindcss in a frameworkless project.'
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     template: '%s - Docs',
     default: 'StimulusJS Tailwindcss',
   },
-  description:
-    'Getting started with using StimulusJS Tailwindcss in a frameworkless project.',
-  keywords: 'StimulusJS, Tailwindcss, StimulusJS Tailwindcss',
+  description: siteDescription,
+  keywords: ['StimulusJS', 'Tailwindcss', 'StimulusJS Tailwindcss'],
+  alternates: {
+    canonical: '/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: 'website',
+    siteName: 'StimulusJS Tailwindcss',
+    title: 'StimulusJS Tailwindcss',
+    description: siteDescription,
+    url: siteUrl,
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'StimulusJS Tailwindcss',
+    description: siteDescription,
+  },
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -37,6 +60,15 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   manifest: '/site.webmanifest',
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareSourceCode',
+  name: 'StimulusJS Tailwindcss',
+  description: siteDescription,
+  codeRepository: 'https://github.com/chiefpansancolt/stimulus-tailwind-components',
+  programmingLanguage: 'JavaScript',
 }
 
 export default function RootLayout({
@@ -51,6 +83,10 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="flex min-h-full bg-white dark:bg-slate-900">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Providers>
           <Layout>{children}</Layout>
         </Providers>
