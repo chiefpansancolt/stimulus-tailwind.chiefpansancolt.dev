@@ -67,7 +67,8 @@ const jsonLd = {
   '@type': 'SoftwareSourceCode',
   name: 'StimulusJS Tailwindcss',
   description: siteDescription,
-  codeRepository: 'https://github.com/chiefpansancolt/stimulus-tailwind-components',
+  codeRepository:
+    'https://github.com/chiefpansancolt/stimulus-tailwind-components',
   programmingLanguage: 'JavaScript',
 }
 
