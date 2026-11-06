@@ -53,6 +53,11 @@ function useAutocomplete({
     AutocompleteState<Result> | EmptyObject
   >({})
 
+  // Holds the current `autocomplete` instance so `navigate` (which the
+  // instance itself needs at creation time, for its navigator config) can
+  // reference it without a circular reference between the two.
+  let autocompleteRef = useRef<Autocomplete>(null)
+
   function navigate({ itemUrl }: { itemUrl?: string }) {
     if (!itemUrl) {
       return
@@ -64,10 +69,16 @@ function useAutocomplete({
       itemUrl ===
       window.location.pathname + window.location.search + window.location.hash
     ) {
-      close(autocomplete)
+      if (autocompleteRef.current) {
+        close(autocompleteRef.current)
+      }
     }
   }
 
+  /* eslint-disable react-hooks/refs -- `navigate` only reads
+     autocompleteRef.current from inside a navigator callback, which
+     createAutocomplete only ever invokes in response to a user action
+     (click/select), never synchronously during this initializer. */
   let [autocomplete] = useState<Autocomplete>(() =>
     createAutocomplete<
       Result,
@@ -105,6 +116,11 @@ function useAutocomplete({
       },
     }),
   )
+  /* eslint-enable react-hooks/refs */
+
+  useEffect(() => {
+    autocompleteRef.current = autocomplete
+  }, [autocomplete])
 
   return { autocomplete, autocompleteState }
 }
